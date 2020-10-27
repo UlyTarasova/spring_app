@@ -6,7 +6,6 @@ import javax.persistence.*;
 
 @Entity
 @Data
-@Table(name = "users")
 @NoArgsConstructor
 public class Users {
 
