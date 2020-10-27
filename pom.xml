@@ -64,7 +64,12 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
+			<!-- Enable liberty-maven-plugin -->
+
+
+
 		</plugins>
+
 	</build>
 
 </project>
