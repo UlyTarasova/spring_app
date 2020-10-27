@@ -67,7 +67,14 @@
 			<!-- Enable liberty-maven-plugin -->
 
 
-
+			<plugin>
+				<groupId>io.openliberty.tools</groupId>
+				<artifactId>liberty-maven-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<serverName>guideServer</serverName>
+				</configuration>
+			</plugin>
 		</plugins>
 
 	</build>
