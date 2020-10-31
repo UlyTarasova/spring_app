@@ -144,14 +144,14 @@
                 document.getElementById("usersList").innerHTML = html;
             }
         };
-        xhttp.open("GET", "${SPRING_APPS_URL}" +"/users/findByLogin?login=" + login, true);
+        xhttp.open("GET", "https://spring--apps.herokuapp.com/users/findByLogin?login=" + login, true);
         xhttp.send();
         document.getElementById("search_field").value="";
     }
 
     function deleteUser(userId) {
         var xhttp = new XMLHttpRequest();
-        xhttp.open("DELETE", "${SPRING_APPS_URL}" +"/users/delete/" + userId, true);
+        xhttp.open("DELETE", "https://spring--apps.herokuapp.com/users/delete/" + userId, true);
         xhttp.send();
         loadUsers();
         window.location.reload();
@@ -163,7 +163,7 @@
         var userEmail = document.getElementById("user_email").value;
 
         var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
-        xmlhttp.open("POST","${SPRING_APPS_URL}" +"/users/save");
+        xmlhttp.open("POST", "https://spring--apps.herokuapp.com/users/save");
         xmlhttp.setRequestHeader("Content-Type", "application/json");
 
         xmlhttp.send(JSON.stringify({name: userName, login: userLogin, email: userEmail}));
@@ -199,7 +199,7 @@
                 document.getElementById("usersList").innerHTML = html;
             }
         };
-        xhttp.open("GET", "${SPRING_APPS_URL}" +"/users/findAll", true);
+        xhttp.open("GET", "https://spring--apps.herokuapp.com/users/findAll", true);
         xhttp.send();
     }
 
