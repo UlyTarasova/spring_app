@@ -23,9 +23,9 @@ public class DefaultUsersService implements UsersService{
         if (isNull(usersDto)) {
             throw new ValidationException("Object user is null");
         }
-       if (isNull(usersDto.getLogin()) || usersDto.getLogin().isEmpty()) {
-           throw new ValidationException("Login is empty");
-       }
+        if (isNull(usersDto.getLogin()) || usersDto.getLogin().isEmpty()) {
+            throw new ValidationException("Login is empty");
+        }
     }
 
     @Override
